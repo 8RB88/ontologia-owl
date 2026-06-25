@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/roberto/ontologies/2026/PizzaTutorial"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/roberto/ontologies/2026/PizzaTutorial">
+    <Prefix name="" IRI="http://www.semanticweb.org/roberto/ontologies/2026/PizzaTutorial#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontologia tutorial del dominio Pizza (DeBellis) extendida con una Pizza de Autor: la Pizza Chivo Andino, basada en carne de chivo al estilo serrano ecuatoriano.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AchioteTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AjiAmarilloTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnchovyTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AndeanCheeseTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AndeanCuminTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheeseTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheesyPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChivoAndinoPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CilantroTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeepPanBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoatMeatTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenPepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HamTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InterestingPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JalapenoPepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MargheritaPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeatTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MozzarellaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MushroomTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OliveTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParmesanTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PepperoniTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PizzaBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PizzaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrawnTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedOnionTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedPepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoastedGarlicTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalamiTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeafoodTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spiciness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicyBeefTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicyPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StuffedCrustBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThinAndCrispyBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TomatoTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TunaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetableTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetarianPizza"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpiciness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCaloricContent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MiChivoAndino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mild"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CheesyPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#CheeseTopping"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InterestingPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#PizzaTopping"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Spiciness"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Hot"/>
+            <NamedIndividual IRI="#Medium"/>
+            <NamedIndividual IRI="#Mild"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpicyPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasSpiciness"/>
+                    <NamedIndividual IRI="#Hot"/>
+                </ObjectHasValue>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VegetarianPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <ObjectUnionOf>
+                    <Class IRI="#CheeseTopping"/>
+                    <Class IRI="#VegetableTopping"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AchioteTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AchioteTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <NamedIndividual IRI="#Mild"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AjiAmarilloTopping"/>
+        <Class IRI="#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AjiAmarilloTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <NamedIndividual IRI="#Hot"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnchovyTopping"/>
+        <Class IRI="#SeafoodTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AndeanCheeseTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AndeanCheeseTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <NamedIndividual IRI="#Mild"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AndeanCuminTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AndeanCuminTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <NamedIndividual IRI="#Mild"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaperTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheeseTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheesyPizza"/>
+        <Class IRI="#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBase"/>
+            <Class IRI="#StuffedCrustBase"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#AchioteTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#AjiAmarilloTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#AndeanCheeseTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#AndeanCuminTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#CilantroTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoatMeatTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#JalapenoPepperTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#RedOnionTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#RoastedGarlicTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#AchioteTopping"/>
+                <Class IRI="#AjiAmarilloTopping"/>
+                <Class IRI="#AndeanCheeseTopping"/>
+                <Class IRI="#AndeanCuminTopping"/>
+                <Class IRI="#CilantroTopping"/>
+                <Class IRI="#GoatMeatTopping"/>
+                <Class IRI="#JalapenoPepperTopping"/>
+                <Class IRI="#RedOnionTopping"/>
+                <Class IRI="#RoastedGarlicTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CilantroTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CilantroTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <NamedIndividual IRI="#Mild"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeepPanBase"/>
+        <Class IRI="#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoatMeatTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoatMeatTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <NamedIndividual IRI="#Medium"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenPepperTopping"/>
+        <Class IRI="#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HamTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InterestingPizza"/>
+        <Class IRI="#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JalapenoPepperTopping"/>
+        <Class IRI="#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JalapenoPepperTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <NamedIndividual IRI="#Hot"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MozzarellaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#MozzarellaTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeatTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MozzarellaTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MushroomTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedPizza"/>
+        <Class IRI="#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OliveTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParmesanTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepperTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepperoniTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pizza"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBase"/>
+            <Class IRI="#PizzaBase"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PizzaBase"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PizzaTopping"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrawnTopping"/>
+        <Class IRI="#SeafoodTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedOnionTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedOnionTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <NamedIndividual IRI="#Mild"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedPepperTopping"/>
+        <Class IRI="#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoastedGarlicTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoastedGarlicTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <NamedIndividual IRI="#Mild"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalamiTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeafoodTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spiciness"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpicyBeefTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpicyPizza"/>
+        <Class IRI="#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StuffedCrustBase"/>
+        <Class IRI="#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThinAndCrispyBase"/>
+        <Class IRI="#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TomatoTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TunaTopping"/>
+        <Class IRI="#SeafoodTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetableTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetarianPizza"/>
+        <Class IRI="#Pizza"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AchioteTopping"/>
+        <Class IRI="#AndeanCuminTopping"/>
+        <Class IRI="#CaperTopping"/>
+        <Class IRI="#CilantroTopping"/>
+        <Class IRI="#MushroomTopping"/>
+        <Class IRI="#OliveTopping"/>
+        <Class IRI="#PepperTopping"/>
+        <Class IRI="#RedOnionTopping"/>
+        <Class IRI="#RoastedGarlicTopping"/>
+        <Class IRI="#TomatoTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AjiAmarilloTopping"/>
+        <Class IRI="#GreenPepperTopping"/>
+        <Class IRI="#JalapenoPepperTopping"/>
+        <Class IRI="#RedPepperTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AnchovyTopping"/>
+        <Class IRI="#PrawnTopping"/>
+        <Class IRI="#TunaTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AndeanCheeseTopping"/>
+        <Class IRI="#MozzarellaTopping"/>
+        <Class IRI="#ParmesanTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CheeseTopping"/>
+        <Class IRI="#MeatTopping"/>
+        <Class IRI="#SeafoodTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeepPanBase"/>
+        <Class IRI="#StuffedCrustBase"/>
+        <Class IRI="#ThinAndCrispyBase"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GoatMeatTopping"/>
+        <Class IRI="#HamTopping"/>
+        <Class IRI="#PepperoniTopping"/>
+        <Class IRI="#SalamiTopping"/>
+        <Class IRI="#SpicyBeefTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pizza"/>
+        <Class IRI="#PizzaBase"/>
+        <Class IRI="#PizzaTopping"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Spiciness"/>
+        <NamedIndividual IRI="#Hot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spiciness"/>
+        <NamedIndividual IRI="#Medium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChivoAndinoPizza"/>
+        <NamedIndividual IRI="#MiChivoAndino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spiciness"/>
+        <NamedIndividual IRI="#Mild"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hot"/>
+        <NamedIndividual IRI="#Medium"/>
+        <NamedIndividual IRI="#Mild"/>
+    </DifferentIndividuals>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCaloricContent"/>
+        <NamedIndividual IRI="#MiChivoAndino"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">980</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isToppingOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBase"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#Pizza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpiciness"/>
+        <Class IRI="#PizzaTopping"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTopping"/>
+        <Class IRI="#Pizza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#PizzaBase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpiciness"/>
+        <Class IRI="#Spiciness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasCaloricContent"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCaloricContent"/>
+        <Class IRI="#Pizza"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCaloricContent"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AchioteTopping</IRI>
+        <Literal>Pasta de achiote (Bixa orellana), colorante y saborizante andino que da el tono rojizo-anaranjado caracteristico a la carne de chivo macerada. Sabor levemente ahumado y terroso. Subclase de VegetableTopping con nivel de picante Mild.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AjiAmarilloTopping</IRI>
+        <Literal>Ají amarillo andino (Capsicum baccatum), uno de los chiles mas emblematicos de los Andes con sabor afrutado e intenso picante. Complementa al jalapeño para reforzar el perfil SpicyPizza. Subclase de PepperTopping con nivel de picante Hot. Elemento de autor nuevo, UTPL 2026.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AndeanCheeseTopping</IRI>
+        <Literal>Queso fresco de los Andes ecuatorianos, suave y ligeramente salado. Subclase de CheeseTopping con nivel de picante Mild. Permite que el razonador clasifique la ChivoAndinoPizza como CheesyPizza. Elemento de autor, UTPL 2026.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AndeanCuminTopping</IRI>
+        <Literal>Comino andino tostado y molido, especia fundamental en la maceración de la carne de chivo serrano. Aporta aroma terroso y profundidad de sabor. Subclase de VegetableTopping con nivel de picante Mild.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChivoAndinoPizza</IRI>
+        <Literal>Pizza de autor de inspiracion serrana ecuatoriana: jugosa carne de chivo macerada en especias andinas (comino, achiote, ajo tostado), queso fresco de los Andes y cebolla paitena encurtida sobre masa rellena, con un golpe picante de jalapeno y aji amarillo. Una explosion de sabor andino. El razonador la infiere automaticamente como SpicyPizza (lleva jalapeño Hot), CheesyPizza (lleva AndeanCheese) e InterestingPizza (≥3 toppings). Creada por Roberto Bustamante, UTPL 2026.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CilantroTopping</IRI>
+        <Literal>Cilantro fresco picado, hierba aromática imprescindible en la cocina serrana ecuatoriana. Se usa como toque final sobre la pizza horneada para aportar frescura y contraste herbal. Subclase de VegetableTopping con nivel de picante Mild.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GoatMeatTopping</IRI>
+        <Literal>Carne de chivo macerada en especias andinas (comino, achiote, ajo) y asada lentamente; ingrediente protagonista de la ChivoAndinoPizza. Subclase de MeatTopping con nivel de picante Medium. Elemento de autor, UTPL 2026.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#JalapenoPepperTopping</IRI>
+        <Literal>Chile jalapeño, responsable del nivel de picante Hot en la ChivoAndinoPizza. Subclase de PepperTopping. Su valor hasSpiciness Hot es clave para que el razonador infiera SpicyPizza. Elemento de autor, UTPL 2026.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MargheritaPizza</IRI>
+        <Literal>A pizza that only has Mozzarella and Tomato toppings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MiChivoAndino</IRI>
+        <Literal>Instancia de ejemplo de la ChivoAndinoPizza con 980 kcal totales. El razonador la clasifica automaticamente como HighCaloriePizza (≥400 kcal), SpicyPizza, CheesyPizza e InterestingPizza. Individuo de autor, UTPL 2026.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RedOnionTopping</IRI>
+        <Literal>Cebolla paitena encurtida en limón y sal, ingrediente andino tradicional. Aporta un toque fresco y acido que corta la grasa del chivo. Subclase de VegetableTopping con nivel de picante Mild.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RoastedGarlicTopping</IRI>
+        <Literal>Ajo tostado en aceite de oliva, que suaviza su pungencia y aporta notas caramelizadas que complementan la carne de chivo asada. Subclase de VegetableTopping con nivel de picante Mild.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StuffedCrustBase</IRI>
+        <Literal>Masa rellena en sus bordes con queso andino fresco, ideal para sostener la jugosa carne de chivo macerada. Subclase de PizzaBase, disjunta con DeepPanBase y ThinAndCrispyBase. Elemento de autor, UTPL 2026.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
