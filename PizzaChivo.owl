@@ -753,12 +753,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AjiAmarilloTopping</IRI>
-        <Literal>Ají amarillo andino (Capsicum baccatum), uno de los chiles mas emblematicos de los Andes con sabor afrutado e intenso picante. Complementa al jalapeño para reforzar el perfil SpicyPizza. Subclase de PepperTopping con nivel de picante Hot. Elemento de autor nuevo, UTPL 2026.</Literal>
+        <Literal>Ají amarillo andino (Capsicum baccatum), uno de los chiles mas emblematicos de los Andes con sabor afrutado e intenso picante. Complementa al jalapeño para reforzar el perfil SpicyPizza. Subclase de PepperTopping con nivel de picante Hot.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AndeanCheeseTopping</IRI>
-        <Literal>Queso fresco de los Andes ecuatorianos, suave y ligeramente salado. Subclase de CheeseTopping con nivel de picante Mild. Permite que el razonador clasifique la ChivoAndinoPizza como CheesyPizza. Elemento de autor, UTPL 2026.</Literal>
+        <Literal>Queso fresco de los Andes ecuatorianos, suave y ligeramente salado. Subclase de CheeseTopping con nivel de picante Mild. Permite que el razonador clasifique la ChivoAndinoPizza como CheesyPizza.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -768,7 +768,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ChivoAndinoPizza</IRI>
-        <Literal>Pizza de autor de inspiracion serrana ecuatoriana: jugosa carne de chivo macerada en especias andinas (comino, achiote, ajo tostado), queso fresco de los Andes y cebolla paitena encurtida sobre masa rellena, con un golpe picante de jalapeno y aji amarillo. Una explosion de sabor andino. El razonador la infiere automaticamente como SpicyPizza (lleva jalapeño Hot), CheesyPizza (lleva AndeanCheese) e InterestingPizza (≥3 toppings). Creada por Roberto Bustamante, UTPL 2026.</Literal>
+        <Literal>Pizza de autor de inspiracion serrana ecuatoriana: jugosa carne de chivo macerada en especias andinas (comino, achiote, ajo tostado), queso fresco de los Andes y cebolla paitena encurtida sobre masa rellena, con un golpe picante de jalapeno y aji amarillo. Una explosion de sabor andino. El razonador la infiere automaticamente como SpicyPizza (lleva jalapeño Hot), CheesyPizza (lleva AndeanCheese) e InterestingPizza (≥3 toppings).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -778,12 +778,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GoatMeatTopping</IRI>
-        <Literal>Carne de chivo macerada en especias andinas (comino, achiote, ajo) y asada lentamente; ingrediente protagonista de la ChivoAndinoPizza. Subclase de MeatTopping con nivel de picante Medium. Elemento de autor, UTPL 2026.</Literal>
+        <Literal>Carne de chivo macerada en especias andinas (comino, achiote, ajo) y asada lentamente; ingrediente protagonista de la ChivoAndinoPizza. Subclase de MeatTopping con nivel de picante Medium.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#JalapenoPepperTopping</IRI>
-        <Literal>Chile jalapeño, responsable del nivel de picante Hot en la ChivoAndinoPizza. Subclase de PepperTopping. Su valor hasSpiciness Hot es clave para que el razonador infiera SpicyPizza. Elemento de autor, UTPL 2026.</Literal>
+        <Literal>Chile jalapeño, responsable del nivel de picante Hot en la ChivoAndinoPizza. Subclase de PepperTopping. Su valor hasSpiciness Hot es clave para que el razonador infiera SpicyPizza.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -808,7 +808,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#StuffedCrustBase</IRI>
-        <Literal>Masa rellena en sus bordes con queso andino fresco, ideal para sostener la jugosa carne de chivo macerada. Subclase de PizzaBase, disjunta con DeepPanBase y ThinAndCrispyBase. Elemento de autor, UTPL 2026.</Literal>
+        <Literal>Masa rellena en sus bordes con queso andino fresco, ideal para sostener la jugosa carne de chivo macerada. Subclase de PizzaBase, disjunta con DeepPanBase y ThinAndCrispyBase.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
